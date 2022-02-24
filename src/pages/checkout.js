@@ -3,6 +3,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import CheckoutProduct from '../components/CheckoutProduct'
 import { selectItems, selectTotal } from '../slices/basketSlice'
+import Currency from "react-currency-formatter"
+
 
 function Checkout() {
     const items = useSelector(selectItems)
